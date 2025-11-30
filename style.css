@@ -1,0 +1,378 @@
+/* General Resets & Typography */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Added Poppins font */
+    background: #0d1224; /* Dark blue background */
+    color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Increased spacing */
+    font-size: 2.5em;
+    color: #fdbb15; /* Yellow highlight */
+}
+
+section {
+    padding: 80px 10%; /* More vertical padding */
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center sections */
+}
+
+a {
+    text-decoration: none;
+    color: #fdbb15;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #d99d10;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #fdbb15;
+    color: black;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #d99d10;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items */
+    padding: 20px 10%;
+    background: #0a0f20;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Subtle shadow */
+}
+
+.logo {
+    color: #fdbb15;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+header nav a {
+    color: #ccc;
+    margin-left: 25px;
+    font-size: 1.1em;
+}
+header nav a:hover {
+    color: #fdbb15;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh; /* Takes up more screen space */
+    padding-top: 0; /* Adjust padding due to min-height */
+}
+
+.hero-text {
+    flex: 1; /* Takes available space */
+    padding-right: 40px; /* Space between text and image */
+}
+.hero-text h1 {
+    font-size: 3.5em; /* Larger heading */
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.hero-text p {
+    font-size: 1.4em;
+    color: #bbb;
+}
+
+.hero-img {
+    width: 380px; /* Adjusted size */
+    height: 380px; /* Make it square */
+    object-fit: cover; /* Cover the area */
+    border-radius: 50%; /* Make it round */
+    border: 5px solid #fdbb15; /* Yellow border */
+    box-shadow: 0 0 20px rgba(253, 187, 21, 0.4); /* Glow effect */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Increased gap */
+    background: #131b38; /* Slightly lighter background */
+    padding: 80px 10%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.about-img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.about-text {
+    flex: 2;
+}
+.about-text h2 {
+    text-align: left; /* Align to left in section */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+.about-text p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+/* Experience & Skills Sections */
+.experience .exp-boxes,
+.skills .skill-boxes {
+    display: flex;
+    justify-content: space-around; /* Distribute items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between boxes */
+}
+
+.box {
+    flex: 1; /* Allow boxes to grow */
+    min-width: 280px; /* Minimum width for boxes */
+    background: #1e284c; /* Darker box background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-top: 3px solid #fdbb15; /* Top border highlight */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+.box h3 {
+    color: #fdbb15;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.box p {
+    color: #bbb;
+    font-size: 0.95em;
+}
+
+/* Testimony Section */
+.testimony {
+    text-align: center;
+    background: #0a0f20;
+    padding: 60px 10%;
+}
+.testimony .quote {
+    font-style: italic;
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 30px auto;
+    color: #e0e0e0;
+}
+.testimony-img {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fdbb15;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop if necessary */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio-grid img:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Blog Section */
+.blog-posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #131b38;
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.blog-posts .post {
+    flex: 1;
+    padding-right: 20px;
+}
+.blog-posts .post h3 {
+    color: #fdbb15;
+    font-size: 1.8em;
+}
+.blog-posts .post p {
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.post-img {
+    flex: 1;
+    text-align: right;
+}
+.post-img img {
+    width: 100%; /* Make image responsive within its container */
+    max-width: 400px; /* Max width to control size */
+    height: 250px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.contact-info a {
+    color: #fdbb15;
+}
+
+.contact form {
+    max-width: 600px; /* Wider form */
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444; /* Subtle border */
+    background: #1e284c; /* Darker input background */
+    color: white;
+    font-size: 1em;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #aaa;
+}
+.contact textarea {
+    min-height: 120px;
+    resize: vertical; /* Allow vertical resizing */
+}
+.contact button.btn {
+    width: 100%; /* Full width button */
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0a0f20;
+    color: #ccc;
+    font-size: 0.9em;
+    border-top: 1px solid #222;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+    header nav {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav a {
+        margin: 5px 10px;
+    }
+    .hero, .about, .blog-posts {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .about-text, .blog-posts .post {
+        padding-right: 0;
+    }
+    .hero-img, .about-img, .testimony-img {
+        margin-top: 30px;
+    }
+    .about-text h2 {
+        text-align: center;
+    }
+    .exp-boxes, .skill-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 80%;
+        min-width: unset;
+    }
+    .post-img {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .hero-img {
+        width: 250px;
+        height: 250px;
+    }
+    .about-img {
+        width: 100%;
+        height: auto;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    section {
+        padding: 40px 5%;
+    }
+}
