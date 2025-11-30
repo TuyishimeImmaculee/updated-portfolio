@@ -1,8 +1,8 @@
 /* General Resets & Typography */
 body {
     margin: 0;
-    font-family: 'Poppins', Arial, sans-serif; /* Added Poppins font */
-    background: #0d1224; /* Dark blue background */
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #0d1224;
     color: white;
     line-height: 1.6;
 }
@@ -15,15 +15,15 @@ h1, h2, h3 {
 
 h2 {
     text-align: center;
-    margin-bottom: 40px; /* Increased spacing */
+    margin-bottom: 40px;
     font-size: 2.5em;
-    color: #fdbb15; /* Yellow highlight */
+    color: #fdbb15;
 }
 
 section {
-    padding: 80px 10%; /* More vertical padding */
-    max-width: 1200px; /* Max width for content */
-    margin: 0 auto; /* Center sections */
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 a {
@@ -53,13 +53,13 @@ a:hover {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically align items */
+    align-items: center;
     padding: 20px 10%;
     background: #0a0f20;
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Subtle shadow */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -82,16 +82,16 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 70vh; /* Takes up more screen space */
-    padding-top: 0; /* Adjust padding due to min-height */
+    min-height: 70vh;
+    padding-top: 0;
 }
 
 .hero-text {
-    flex: 1; /* Takes available space */
-    padding-right: 40px; /* Space between text and image */
+    flex: 1;
+    padding-right: 40px;
 }
 .hero-text h1 {
-    font-size: 3.5em; /* Larger heading */
+    font-size: 3.5em;
     margin-bottom: 10px;
     line-height: 1.2;
 }
@@ -101,20 +101,20 @@ header nav a:hover {
 }
 
 .hero-img {
-    width: 380px; /* Adjusted size */
-    height: 380px; /* Make it square */
-    object-fit: cover; /* Cover the area */
-    border-radius: 50%; /* Make it round */
-    border: 5px solid #fdbb15; /* Yellow border */
-    box-shadow: 0 0 20px rgba(253, 187, 21, 0.4); /* Glow effect */
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fdbb15;
+    box-shadow: 0 0 20px rgba(253, 187, 21, 0.4);
 }
 
 /* About Section */
 .about {
     display: flex;
     align-items: center;
-    gap: 60px; /* Increased gap */
-    background: #131b38; /* Slightly lighter background */
+    gap: 60px;
+    background: #131b38;
     padding: 80px 10%;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -132,7 +132,7 @@ header nav a:hover {
     flex: 2;
 }
 .about-text h2 {
-    text-align: left; /* Align to left in section */
+    text-align: left;
     font-size: 2.2em;
     margin-bottom: 20px;
 }
@@ -145,24 +145,24 @@ header nav a:hover {
 .experience .exp-boxes,
 .skills .skill-boxes {
     display: flex;
-    justify-content: space-around; /* Distribute items */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 30px; /* Space between boxes */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .box {
-    flex: 1; /* Allow boxes to grow */
-    min-width: 280px; /* Minimum width for boxes */
-    background: #1e284c; /* Darker box background */
+    flex: 1;
+    min-width: 280px;
+    background: #1e284c;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    border-top: 3px solid #fdbb15; /* Top border highlight */
+    border-top: 3px solid #fdbb15;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .box:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 .box h3 {
@@ -173,6 +173,14 @@ header nav a:hover {
 .box p {
     color: #bbb;
     font-size: 0.95em;
+}
+
+/* NEW: Skill Icon Styling */
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: invert(1) brightness(1.2); /* Helps light-colored icons stand out on a dark background */
 }
 
 /* Testimony Section */
@@ -200,20 +208,20 @@ header nav a:hover {
 /* Portfolio Section */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
 .portfolio-grid img {
     width: 100%;
-    height: 200px; /* Fixed height for consistency */
-    object-fit: cover; /* Crop if necessary */
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .portfolio-grid img:hover {
-    transform: scale(1.03); /* Slight zoom on hover */
+    transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
@@ -246,9 +254,9 @@ header nav a:hover {
     text-align: right;
 }
 .post-img img {
-    width: 100%; /* Make image responsive within its container */
-    max-width: 400px; /* Max width to control size */
-    height: 250px; /* Fixed height */
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
@@ -271,19 +279,19 @@ header nav a:hover {
 }
 
 .contact form {
-    max-width: 600px; /* Wider form */
+    max-width: 600px;
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between form elements */
+    gap: 15px;
 }
 
 .contact input,
 .contact textarea {
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #444; /* Subtle border */
-    background: #1e284c; /* Darker input background */
+    border: 1px solid #444;
+    background: #1e284c;
     color: white;
     font-size: 1em;
 }
@@ -293,10 +301,10 @@ header nav a:hover {
 }
 .contact textarea {
     min-height: 120px;
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical;
 }
 .contact button.btn {
-    width: 100%; /* Full width button */
+    width: 100%;
     padding: 15px;
     font-size: 1.1em;
     border: none;
